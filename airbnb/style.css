@@ -1,0 +1,9 @@
+.logo{
+    color: rgba(234, 18, 18, 0.897);
+    font-size: 25px;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
