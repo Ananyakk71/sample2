@@ -4,3 +4,9 @@ p{
     font-family: arial;
     line-height:3.4em;
 }
+.wrapper{
+    background: #fff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}

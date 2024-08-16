@@ -1,0 +1,15 @@
+{
+    "name": "airbnb",
+    "version": "1.0.0",
+    "main": "index.html",
+    "dependencies":{
+        "http-server":"14.1.1"
+    },
+    "scripts": {
+        "start": "http-server -c-1 -p 8081"
+        
+    },
+    "author": "",
+    "license":"ISC"
+
+}
