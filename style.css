@@ -26,20 +26,7 @@ header h1{
 }
 .banner img{
     max-width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-   
+} 
 
 .banner div{
     background-color: #feb614;
@@ -54,3 +41,4 @@ header h1{
 }
 .banner h2 span{
     font-size: 1.3em;
+}
