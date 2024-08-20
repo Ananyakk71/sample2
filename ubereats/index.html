@@ -4,31 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>ubereats</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo">Uber Eats</div>
+                <div class="logo">&#9776; Uber Eats</div>
             </nav>
                 <div class="buttons">
                     <button class="login">Log in</button>
                     <button class="signup">Sign up</button>
                 </div>
         </header>
-        <main>   
-            <div class="banner">
-                <h1>Order delivery near you</h1>
-                <form class="search">
-                  <input type="text" placeholder="Enter delivery address" >
-                  <button type="submit" >Deliver now</button>
-                  <button type="submit">Search here</button>
-                </form>
-                <a href="" class="signup-link">Or sign In</a>
+        <main>  
+            <h1>Order delivery near you</h1>
+            <div class="search">
+                 <input type="text" placeholder="Enter delivery address" >
+                  <select>
+                  <option>Deliver now</option>
+                  </select>
+                  <button class="search-button">Search here</button>
+                </div>
+                <p class="sign-in-link">Or <a href="">Sign In</a></p>
+        </main>
+        <img src="img/uberheader.webp">
+        <div class="areas">
+            <div class="options" id="employees">
+                <p>Feed your employees</p>
+                <a href="">create a bussiness account</a>
             </div>
-        
-        <section class="image">
-            <img src="img/uberheader.webp" alt="ubereats banner">
-        </section>
+            <div class="options" id="restaurant">
+                <p>Your restaurant, delivered</p>
+                <a href="">Add your restaurant</a>
+            </div>
+            <div class="options" id="deliver">
+                <p>Deliver with Uber Eats</p>
+                <a href="">sign up to deliver</a>
+            </div>
+        </div>
     </body>
 </html>
