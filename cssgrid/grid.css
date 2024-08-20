@@ -1,0 +1,40 @@
+body{
+    color: #fff;
+    font-family: 'Nunito Semibold';
+    text-align: center;
+}
+#content{
+    display: grid;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-columns:repeat(12,1fr) ;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+#content>*{
+    background: #3bbced;
+    padding: 30px;
+}
+header{
+    grid-column: 1/13;
+    grid-area: header;
+}
+main{
+    grid-area: main;
+    grid-column: 4/13;
+    grid-row: 2/4;
+}
+section{
+    grid-area: section;
+}
+aside{
+    grid-area: aside;
+    grid-column: 1/4;
+}
+nav{
+    grid-area: nav;
+}
+footer{
+    grid-area:footer;
+    grid-column: 1/13;
+}
