@@ -7,19 +7,34 @@ body, html{
 }
 .uber img{
     position: absolute;
-    width: 100%;
+    width: 101%;
+    height: 100%;
     left: 0px;
     top: 0px;
     z-index: -1;
 }
 header{
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 25px;
 }
 .logo{
     font-size: 20px;
     font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+nav{
+    display: flex;
+
+}
+.threeline{
+    font-weight: bold;
+    margin-left: -10px;
+    display: block;
 }
 .buttons{
     padding: 15px 15px;
@@ -47,7 +62,10 @@ main{
 h1{
     font-size: 50px;
     margin-bottom: 40px;
-    margin-top: 60px;
+    max-width: 60%;
+    line-height: 64px;
+    font-weight: 700;
+    font-family: UberMove, sans-serif;
 }
 .search{
    margin-bottom: 10px;
@@ -79,6 +97,7 @@ select{
 .areas{
     margin-top:150px;
     display: flex;
+    flex-wrap: nowrap;
     text-align: center;
 }
 .options{
@@ -97,4 +116,143 @@ select{
 .options a{
     color: black;
     margin-right: 140px;
+}
+.map img{
+    width: 100%;
+}
+.cites{
+    display: flex;
+}
+.cites h2{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cites a{
+    color: black;
+    margin-left: 800px;
+    padding: 40px;
+}
+.citenames{
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    margin-top: 90px;
+    color:#494646;
+    cursor: pointer;
+}
+.citenames .column{
+    flex-basis: 20%;
+}
+.citenames .column p{
+    font-size: 18px;
+    margin: 25px 0;
+}
+.countries{
+    display: flex;
+}
+.countries h2{
+    font-size: 40px;
+    font-family:Arial, sans-serif;
+    margin-left: 40px;
+}
+.countries a{
+    color: black;
+    margin-left: 600px;
+    padding: 38px;
+}
+.countriesname{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    cursor: pointer;
+}
+.countriesname .column{
+    flex-basis: 20%;
+}
+.countriesname .column p{
+    font-size: 18px;
+    margin: 25px 0;
+    color: #294646;
+}
+hr{
+    border: none;
+    height: 0.5px;
+    background-color: rgb(192, 187, 187);
+    margin-top: 10px;
+}
+.uber{
+    display: flex;
+}
+.uber h2{
+   font-size: 35px; 
+   padding: 30px;
+   margin-right: 300px;
+   margin-left: 80px;
+}
+.moreoptions{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+}
+.moreoptions .column{
+    display: flex;
+    flex-direction: column;
+     margin-right: 100px;
+}
+.moreoptions .column a{
+    color:  #000000;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #294646;
+}
+.moreoptions .column a:hover{
+    text-decoration: underline;
+}
+.appstores{
+    display: flex;
+    cursor: pointer;
+    margin-left: 100px;
+}
+ .app-store img{
+   margin-top: -200px; 
+   height: 150px;
+}
+.google-play img{
+   margin-top: -150px;
+   height: 180px;
+}
+.socialmedia{
+    display: flex;
+    margin-top: 35px;
+    margin-left: 90px;
+}
+.facebook img{
+height: 30px;
+}
+.twitter img{
+    height: 22px;
+    margin-top: 4px;
+}
+.instagram img{
+    height: 25px;
+    margin-top: 4px;
+}
+.footerlink{
+    margin-left: 700px;
+}
+.footerlink a{
+    color: #294646;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.footerlink a:hover{
+    text-decoration: underline;
+}
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 450px;
+    margin-right: 74px;
+    color: #294646;
 }
