@@ -75,7 +75,7 @@ main h1{
     margin-bottom: 30px;
     line-height: 64px;
     font-weight: 700;
-    font-family: UberMove, sans-serif;
+    font-family: sans-serif;
 }
 .search{
    margin-bottom: 10px;
@@ -135,6 +135,7 @@ select{
 .options a{
     color: black;
     margin-left: -150px;
+    font-weight:500;
 }
 .map img{
     width: 97.5%;
@@ -299,11 +300,37 @@ height: 30px;
    margin: 0;
 }
 }
-/* small tablet styles*/
-@media screen and (min-width:620px){
+@media screen and (max-width:415) {
+    .options{
+        margin-top: 300px;
+    }
 }
+/* small tablet styles*/
+@media screen and (max-width:600px){
+    .options{
+      padding-top: 10px;
+      margin-left: -100px;
+    }
+    .areas .options img{
+      padding-left: 20px;  
+    }
+}
+@media screen and (max-width:626px) {
+    main h1{
+     padding:-20px;
+     margin-right: -600px;
+    }
+    
+}
+
 /* large tablets & laptop style*/
-@media screen and (min-width: 960px){
+@media screen and (max-width: 915px){
+   .options{
+    margin-top: -60px;
+   }
+   .search{
+    margin-right: -300px;
+   }
    }
 /* desktop styles*/
 @media screen and (max-width: 1181px){
@@ -320,6 +347,9 @@ height: 30px;
     main{
        padding: 290px 0; 
        margin-left: 30px;
+    }
+    main h1{
+        margin-left: 20px;
     }
     .search{
         margin-left: 30px;
@@ -369,4 +399,37 @@ height: 30px;
         margin-left: 300px;
     }
 }
-/* grid testing*/
+@media screen and (max-width:614px){
+    .search{
+        margin-right: -800px;
+    }
+
+}
+@media screen and (min-width:1444px) {
+
+    .buttons{
+        margin-left: 1110px;
+    }
+    .uber img{
+        height: 106%;
+        width: 110.5%;
+        overflow-x: hidden;
+    }
+    main{
+        padding: 380px;
+        margin-left: -330px;
+    }
+    .options p{
+        margin-bottom: 10px;
+    }
+    .areas{
+        padding: 200px;
+        margin-top: -200px;
+        margin-left: -150px;
+    }
+    .areas .options img{
+        width: 110%;
+       
+    }
+
+}
