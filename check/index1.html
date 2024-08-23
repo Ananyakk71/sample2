@@ -1,54 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uber Eats</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ubereats</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
         <header>
-            <h1>Uber Eats</h1>
+            <nav>
+                <div class="menu-icon"></div>
+                <div class="logo">Uber Eats</div>
+            </nav>
+            <div class="buttons">
+                <button>Log in</button>
+                <button>Sign up</button>
+            </div>
         </header>
         <main>
-            <div class="column">
-                <a href="#">Get Help</a>
-                <a href="#">Buy gift cards</a>
-                <a href="#">Add your restaurant</a>
-                <a href="#">Sign up to deliver</a>
-                <a href="#">Create a business account</a>
-                <a href="#">Promotions</a>
+            <h1>Order delivery near you</h1>
+            <div class="search">
+                <input type="text" placeholder="Enter delivery address" >
+                 <select>
+                 <option>Deliver now</option>
+                 </select>
+                 <button class="search-button">Search here</button>
             </div>
-            <div class="column">
-                <a href="#">Restaurants near me</a>
-                <a href="#">View all cities</a>
-                <a href="#">View all countries</a>
-                <a href="#">Pickup near me</a>
-                <a href="#">About Uber Eats</a>
-                <a href="#">Shop groceries</a>
-                <a href="#">English</a>
-            </div>
+               <p class="sign-in-link">Or <a href="">Sign In</a></p>
         </main>
-        <div class="app-stores">
-            <img src="app-store.png" alt="Download on the App Store">
-            <img src="google-play.png" alt="Get it on Google Play">
-        </div>
-        <div class="social-media">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-        </div>
-        <footer>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms</a>
-                <a href="#">Pricing</a>
-                <a href="#">Do not sell or share my personal information</a>
-            </div>
-            <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-            <p>© 2024 Uber Technologies Inc.</p>
-        </footer>
-    </div>
-</body>
+        <section class="uber">
+            <img src="assets/img/uberheader.webp" alt="Burger and fries" class="food-image">
+        </section>
+            
+    </body>
 </html>

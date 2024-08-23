@@ -3,20 +3,18 @@ body, html{
     padding: 0;
     font-family: Arial, sans-serif;
     height: 100%;
+    display: block;
+}
+html{
+   overflow-x: hidden;
+}
 
-}
-.uber img{
-    position: absolute;
-    width: 101%;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    z-index: -1;
-}
 header{
     display: flex;
     align-items: center;
-    margin-left: 36px;
+    position: fixed;
+    padding: 10px;
+    margin-top: -8px;
 }
 .logo{
     font-size: 20px;
@@ -25,6 +23,7 @@ header{
     position: relative;
     box-sizing: border-box;
     display: inline-block;
+    padding: 16px;
 }
 nav{
     display: flex;
@@ -37,33 +36,43 @@ nav{
 }
 .buttons{
     padding: 15px 10px;
-    margin-left: 1050px;  
+    margin-left: 1030px;  
 }
 .buttons button{
     margin-left: 10px;
-    padding: 12px 10px;
+    padding: 10px 13px;
     border: none;
     cursor: pointer;
+    display: inline-block;
 }
 .login{
     background-color:white ;
     color: black;
-    border-radius: 30px;
-    font-weight: bold;
+    border-radius: 50px;
+    font-weight:550;
+    border: 2px solid white;
 }
 .signup{
     background-color: black;
     color: white;
     border-radius: 30px;
-    font-weight: bold;
+    font-weight:550;
+    border: 2px solid white;
+}
+.uber img{
+    position: absolute;
+    height: 100%;
+    font-weight: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
 }
 main{
-    padding: 200px 50px;
+    padding: 280px 60px;
 }
 main h1{
     font-size: 50px;
     margin-bottom: 30px;
-    max-width: 60%;
     line-height: 64px;
     font-weight: 700;
     font-family: UberMove, sans-serif;
@@ -74,19 +83,23 @@ main h1{
 input, select, .search-button{
     padding: 20px;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
 }
 input{
-    padding-right: 240px;
+    padding-right: 280px;
+    font-weight: 540;
 }
 select{
     cursor: pointer;
+    padding-right: 75px;
 }
 .search-button{
     cursor: pointer;
     background-color: black;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: large;
 }
 .sign-in-link{
     color: black;
@@ -96,30 +109,32 @@ select{
     font-size: 15px;
 }
 .areas{
-    margin-top:75px;
+    margin-top:30px;
     display: flex;
     flex-wrap: nowrap;
     text-align: center;
+    width: 100%;
 }
 .options{
-    padding:100px;
+    padding:80px;
     margin-left: -100px;
 }
 .areas .options img{
-    margin-right: -80px;
-    width: 450px;
+    width: 110%;
     height: 250px;
+    right: 900px;
     
 }
 .options p{
     font-weight: bold;
     font-size: 28px;
-    margin-right: 32px;
+    margin-right: 65px;
+    max-width: 100%;
+    margin-top: 10px;
 }
 .options a{
     color: black;
-    margin-right: 165x;
-    margin-left: -100px;
+    margin-left: -150px;
 }
 .map img{
     width: 97.5%;
@@ -129,7 +144,7 @@ select{
 }
 .cites{
     display: flex;
-}
+} 
 .cites h2{
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
@@ -144,7 +159,7 @@ select{
     display: flex;
     padding: 15px;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: -30px;
     color:#494646;
     cursor: pointer;
 }
@@ -174,6 +189,7 @@ select{
     padding: 0px;
     cursor: pointer;
     margin-top: -20px;
+    margin-left: 10px;
 }
 .countriesname .column{
     flex-basis: 20%;
@@ -249,6 +265,8 @@ height: 30px;
 }
 .footerlink{
     margin-left: 700px;
+    font-size: 15px;
+    margin-top: -20px;
 }
 .footerlink a{
     color: #294646;
@@ -264,4 +282,91 @@ height: 30px;
     margin-left: 450px;
     margin-right: 74px;
     color: #294646;
+    font-size: 15px;
 }
+/* mobile style*/
+@media screen and (max-width:600px){
+.areas {
+    margin-top: -200px;
+}
+.options{
+    margin-left: -0px;
+    padding:60px ;
+}
+.areas .options img{
+   width: 180px;
+   height: 100px;
+   margin: 0;
+}
+}
+/* small tablet styles*/
+@media screen and (min-width:620px){
+}
+/* large tablets & laptop style*/
+@media screen and (min-width: 960px){
+   }
+/* desktop styles*/
+@media screen and (max-width: 1181px){
+    header{
+      margin-top: -50px;
+    }
+    .buttons{
+        padding: 50px;
+       margin-left: 712px;
+    }
+    .uber img{
+        height: 100%;
+    }
+    main{
+       padding: 290px 0; 
+       margin-left: 30px;
+    }
+    .search{
+        margin-left: 30px;
+    }
+    .sign-in-link{
+        margin-left: 30px;
+    }
+    .areas{
+        margin-top: 10px;
+    }
+    .areas .options img{
+        height: 60%;
+        width: 110%;   
+    }
+    .options p{
+        margin: 0;
+        font-size: 26px;
+    }
+    .options a{
+        font-size: 15px;
+        margin-right: -90px;
+        font-weight: bold;
+    }
+    .cites a{
+        margin-left:690px;
+    }
+    .countries a{
+        margin-left: 450px;
+    }
+    .uber h2{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    .moreoptions {
+       padding: 70px;
+       padding-left: 260px;
+    }
+    .appstores{
+     margin-top: -50px;
+     margin-left: 20px;
+    }
+    .footerlink{
+        margin-left: 500px;
+        margin-top: -30px;
+    }
+    .privacy{
+        margin-left: 300px;
+    }
+}
+/* grid testing*/
