@@ -285,6 +285,7 @@ height: 30px;
     color: #294646;
     font-size: 15px;
 }
+
 /* mobile style*/
 @media screen and (max-width:600px){
 .areas {
@@ -308,11 +309,10 @@ height: 30px;
 /* small tablet styles*/
 @media screen and (max-width:600px){
     .options{
-      padding-top: 10px;
-      margin-left: -100px;
+      margin-left: -50px; 
     }
     .areas .options img{
-      padding-left: 20px;  
+      margin-left: -10px;  
     }
 }
 @media screen and (max-width:626px) {
@@ -322,11 +322,10 @@ height: 30px;
     }
     
 }
-
 /* large tablets & laptop style*/
 @media screen and (max-width: 915px){
    .options{
-    margin-top: -60px;
+    margin-top: -5px;
    }
    .search{
     margin-right: -300px;
@@ -338,8 +337,8 @@ height: 30px;
       margin-top: -50px;
     }
     .buttons{
-        padding: 50px;
-       margin-left: 712px;
+        padding: 60px;
+       margin-left: 680px;
     }
     .uber img{
         height: 100%;
@@ -368,13 +367,9 @@ height: 30px;
         margin: 0;
         font-size: 26px;
     }
-    .options a{
-        font-size: 15px;
-        margin-right: -90px;
-        font-weight: bold;
-    }
+    
     .cites a{
-        margin-left:690px;
+        margin-left:680px;
     }
     .countries a{
         margin-left: 450px;
@@ -428,8 +423,9 @@ height: 30px;
         margin-left: -150px;
     }
     .areas .options img{
-        width: 110%;
-       
+        width: 110%; 
     }
-
+    .cites {
+        margin-top: -150px;
+    }
 }
