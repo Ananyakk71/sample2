@@ -91,7 +91,8 @@ main{
    margin: 0 auto;
    box-sizing: border-box;
    height: 200px;
-  
+   width: 100%;
+   display: block;
 }
 main{
     @font-face {
@@ -106,11 +107,11 @@ main h1{
     font-size: 52px;
     font-weight: 700;
     margin: 0;
-    display: block;
-}
+    display: block;}
 .search{
     display: flex;
     height: 56px;
+    margin-top: 30px;
 }
  input{
     border: none;
@@ -133,7 +134,7 @@ main h1{
 select{
     height: 100%;
     cursor: pointer;
-    min-width: 15%;
+    min-width: 16%;
 }
 .search-button{
     border-radius: 8px;
@@ -153,142 +154,225 @@ select{
     font-weight: 100%;
     left: 0px;
     top: 0px;
-    margin-left: -20px;
+    margin-left: -10px;
     z-index: -1;
     align-items: center;
     right: 0;
     bottom: 0;
 }
 .sign-in-link{
-    color: black;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 24px;
 }
 .sign-in-link a{
     color: black;
-    font-size: 15px;
+    cursor: pointer;
+}
+.gap2{
+    margin-top: 310px;
+   height: 80px; 
 }
 .areas{
-    margin-top:30px;
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
+    margin-bottom: -24px;
+    margin-right: -12px;
+    margin-left: -12px;
     width: 100%;
+    display: flex;
+    box-sizing: border-box;
 }
 .options{
-    padding:80px;
-    margin-left: -100px;
+    margin-left: 0%;
+    padding-right: 12px;
+    padding-left: 12px;
+    width: 33.333333333333336%;
+    display: block;
+    margin-bottom: 24px;
+    box-sizing: border-box;
 }
+
 .areas .options img{
-    width: 110%;
-    height: 250px;
-    right: 900px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
     
 }
 .options p{
-    font-weight: bold;
+    line-height: 36px;
     font-size: 28px;
-    margin-right: 65px;
-    max-width: 100%;
-    margin-top: 10px;
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
 }
 .options a{
-    color: black;
-    margin-left: -150px;
-    font-weight:500;
+    margin-top: 8px;
+    display: block;
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
+    color: #000000;
+    margin: 0;
 }
-.map img{
-    width: 97.5%;
-    margin-left: 20px;
-    margin-top: -20px;
-    margin-right: -30px;
+.gap3{
+    height: 80px; 
+}
+.gap4{
+    height: 80px;
+}
+.city-countries{
+    padding: 0 40px;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
 }
 .cites{
     display: flex;
+   align-items: flex-end;
+   height: 44px;
+  justify-content: space-between;
 } 
 .cites h2{
-    font-size: 35px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 30px;
+    line-height: 44px;
+    font-weight: 700;
+    font-size: 36px;
+    display: block;
+    margin: 0;
 }
 .cites a{
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
     color: black;
-    margin-left: 940px;
-    padding: 40px;
+}
+.map img{
+    height: 360px;
+    width: 102.5%;
+    margin-left: -10px;
+    margin-top: 20px;
 }
 .citenames{
-    display: flex;
-    padding: 15px;
-    justify-content: space-around;
-    margin-top: -30px;
-    color:#494646;
+    margin-top: 24px;
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-flow: column;
+    height: 264px;
     cursor: pointer;
-}
-.citenames .column{
-    flex-basis: 20%;
 }
 .citenames .column p{
-    font-size: 18px;
-    margin: 25px 0;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+    height: 24px;
+}
+.citenames p{
+    @font-face {
+        font-family:UberMoveBold, Arial,sans-serif ;
+        src: url(UberMoveBold.otf);
+    }
+}
+.gap5{
+    height: 80px;
 }
 .countries{
+    justify-content: space-between;
+    align-items: center;
     display: flex;
+    height: 44px;
 }
 .countries h2{
-    font-size: 40px;
-    font-family:Arial, sans-serif;
-    margin-left: 40px;
+   line-height: 44px;
+   font-weight: 700;
+   font-size: 36px;
+   margin: 0;
+   display: block;
 }
 .countries a{
+    line-height: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 16px;
     color: black;
-    margin-left: 700px;
-    padding: 38px;
 }
 .countriesname{
-    display: flex;
-    justify-content: space-around;
-    padding: 0px;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+    grid-auto-flow: column;
+    display: grid;
+    margin-top: 24px;
+    height: 360px;
     cursor: pointer;
-    margin-top: -20px;
-    margin-left: 10px;
 }
-.countriesname .column{
-    flex-basis: 20%;
-}
+
 .countriesname .column p{
-    font-size: 18px;
-    margin: 25px 0;
-    color: #294646;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    display: block;
+    height: 24px;
 }
-hr{
-    border: none;
-    height: 0.5px;
-    background-color: rgb(192, 187, 187);
-    margin-top: 10px;
+footer{
+    border-top: 1px solid;
+    margin-top: 80px;
+    padding: 72px 0px 88px;
+    display: block;
+    height: 401px;
 }
-.uber{
+.foot{
+    max-width: 1280px;
+    padding: 0 40px;
+    min-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: block;
+    height: 401px;
+}
+/*.ubereats{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    align-items: flex-start;
+    justify-content: space-between;
     display: flex;
-}
-.uber h2{
-   font-size: 35px; 
-   padding: 30px;
-   margin-right: 300px;
-   margin-left: 80px;
+    height: 264px;
+}*/
+.ubereats img{
+   margin-bottom: 64px;
+   height: 24px;
+   width: auto;
+
 }
 .moreoptions{
   display: flex;
+  padding: 30px 250px;
   justify-content: space-between;
-  padding: 70px;
+  margin-top: -120px;
+  margin-left: 250px;
+  margin-right: -180px;
 }
 .moreoptions .column{
     display: flex;
     flex-direction: column;
-     margin-right: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    line-height: 224px;
 }
 .moreoptions .column a{
-    color:  #000000;
+    margin-bottom: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+    color: #000000;
     text-decoration: none;
-    margin-bottom: 20px;
-    font-size: 18px;
-    color: #294646;
 }
 .moreoptions .column a:hover{
     text-decoration: underline;
@@ -296,39 +380,52 @@ hr{
 .appstores{
     display: flex;
     cursor: pointer;
-    margin-left: 100px;
+    margin-left: 20px;
+    margin-top: -80px;
 }
  .app-store img{
-   margin-top: -200px; 
+   margin-top: -250px; 
    height: 150px;
 }
 .google-play img{
    margin-top: -150px;
    height: 180px;
 }
+hr{
+    margin-top:-30px;
+    line-height: 1px;
+}
 .socialmedia{
     display: flex;
-    margin-top: 35px;
-    margin-left: 90px;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 .facebook img{
 height: 30px;
+cursor: pointer;
 }
 .twitter img{
     height: 22px;
     margin-top: 4px;
+    cursor: pointer;
 }
 .instagram img{
     height: 25px;
     margin-top: 4px;
+    cursor: pointer;
 }
 .footerlink{
-    margin-left: 700px;
-    font-size: 15px;
+    display: flex;
+    height: 36px;
+    margin-left: 600px;
     margin-top: -20px;
 }
 .footerlink a{
-    color: #294646;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: normal;
+    color: black;
     text-decoration: none;
     margin-left: 30px;
 }
@@ -337,11 +434,10 @@ height: 30px;
 }
 .privacy{
     display: flex;
+    height: 20px;
     justify-content: space-between;
-    margin-left: 450px;
-    margin-right: 74px;
-    color: #294646;
-    font-size: 15px;
+    margin-right: 40px;
+    margin-left: 350px;
 }
 
 /* mobile style
